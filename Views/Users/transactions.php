@@ -9,7 +9,12 @@
 </head>
 <body>
 
-<h1 style="text-align:center;font-size: 50px">The current account: 12345678911</h1>
+<h1 style="text-align:center;font-size: 50px">
+
+<?php
+session_start();
+echo $_SESSION["accType"].'  :  '.$_SESSION["accId"];
+?></h1>
 
 <div class="container">
 
